@@ -10,7 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Custom Card Example'),
+          title: Text(
+            ' Cart',
+            style:TextStyle(
+              color: Colors.red[600],
+
+
+            ) ,
+            
+            ),
         ),
         body: Center(
           child: Card(
@@ -24,7 +32,7 @@ class MyApp extends StatelessWidget {
                   height: 200,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/car_image.jpg'), // Replace with your image
+                      image: AssetImage(''), // Replace with your image
                       fit: BoxFit.cover,
                     ),
                     borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
@@ -38,13 +46,13 @@ class MyApp extends StatelessWidget {
                       Row(
                         children: [
                           Icon(
-                            Icons.favorite,
-                            color: Colors.pink,
+                            Icons.check_box,
+                            color: Colors.black,
                             size: 24.0,
                           ),
                           SizedBox(width: 8),
                           Text(
-                            '1975 Porsche 911 Carrera',
+                            "Shopping Cart",
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -54,7 +62,8 @@ class MyApp extends StatelessWidget {
                       ),
                       SizedBox(height: 8),
                       Text(
-                        'VIN: WP0ZZZ91ZBS100001',
+                        'Calas\n'
+                        " 15.oo",
                         style: TextStyle(
                           color: Colors.grey,
                         ),
@@ -64,7 +73,7 @@ class MyApp extends StatelessWidget {
                         children: [
                           Icon(Icons.access_time, color: Colors.blue),
                           SizedBox(width: 8),
-                          Text('Posted 2 hours ago'),
+                          Text(''),
                         ],
                       ),
                     ],
