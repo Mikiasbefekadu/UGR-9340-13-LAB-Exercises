@@ -9,9 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Custom Card with Icons'),
-        ),
+        appBar: AppBar(),
         body: Center(
           child: Card(
             elevation: 4,
